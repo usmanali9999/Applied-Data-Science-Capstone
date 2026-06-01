@@ -16,9 +16,10 @@ The project is divided sequentially into the following Jupyter Notebooks and app
 8. **08_Machine_Learning_Prediction.ipynb**: Building and tuning predictive classification models (Logistic Regression, SVM, Decision Trees, and K-Nearest Neighbors) using GridSearchCV.
 
 ## Key Insights & Results
-* **Best Performing Model**: The machine learning models achieved an accuracy score of **83.3%** on the test dataset.
+* **Best Performing Model**: All tuned classification models achieved a baseline accuracy score of **83.3%** on the test dataset, with **Support Vector Machine (SVM)** and **Decision Tree Classifier** showing optimal hyperparameter convergence via `GridSearchCV`.
 * **Payload Impact**: Higher payload masses generally correlate with a higher success rate for first-stage landings.
 * **Launch Site Success**: Operational success rates vary significantly by geographic location and proximity to coastlines.
+
 
 ## Tools & Libraries Used
 * **Languages**: Python, SQL (SQLite)
