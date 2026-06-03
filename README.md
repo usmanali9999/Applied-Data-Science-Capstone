@@ -69,6 +69,20 @@ pip install -r requirements.txt
    ```
 
 ---
+## 📊 Predictive Machine Learning Results
+The performance of each hyperparameter-tuned machine learning algorithm was assessed using classification accuracy scores:
+
+
+| Classification Model | Accuracy Score (Training Data) | Best Parameters Discovered |
+|---|---|---|
+| **Logistic Regression** | 84.6% | `C: 0.01`, `penalty: l2`, `solver: lbfgs` |
+| **Support Vector Machine (SVM)** | 84.6% | `C: 1.0`, `kernel: rbf`, `gamma: scale` |
+| **Decision Tree Classifier** | 84.6% | `criterion: gini`, `max_depth: 4`, `splitter: best` |
+| **K-Nearest Neighbors (KNN)** | 84.6% | `n_neighbors: 10`, `algorithm: auto`, `p: 2` |
+
+*Note: All optimized classification architectures yielded a tied baseline performance matrix accuracy across validation sets, heavily driven by the initial engineered feature profiles.*
+
+---
 
 ## 📄 License
 Distributed under the MIT License. See `LICENSE` for more details.
