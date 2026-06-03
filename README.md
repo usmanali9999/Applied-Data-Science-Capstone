@@ -15,14 +15,57 @@ The project is divided sequentially into the following Jupyter Notebooks and app
 7. **07-dashapp.py**: A fully interactive web dashboard built with Plotly Dash allowing real-time filtering of payloads and launch success rates.
 8. **08_Machine_Learning_Prediction.ipynb**: Building and tuning predictive classification models (Logistic Regression, SVM, Decision Trees, and K-Nearest Neighbors) using GridSearchCV.
 
+## 📂 Repository Structure
+```text
+├── 1_Data_Collection_API.ipynb       # Fetching raw SpaceX API data array streams
+├── 2_Data_Web_Scraping.ipynb         # Web scraping launch records via BeautifulSoup
+├── 3_EDA_SQL.ipynb                    # Analyzing dataset patterns using SQL queries
+├── 4_EDA_Visualization.ipynb          # Exploratory visualizations (Seaborn/Matplotlib)
+├── 5_Geospatial_Maps_Folium.ipynb     # Interactive map layout mapping coordinates
+├── 6_Interactive_Dashboard_Dash.py   # Code application for the live Plotly Dash app
+├── 7_Machine_Learning_Prediction.ipynb# ML classification training & model evaluation
+├── .gitignore                         # Tracking files ignored by Git version control
+├── LICENSE                            # Open-source distribution parameters
+├── README.md                          # Comprehensive documentation handbook
+└── requirements.txt                   # Complete project software package dependencies
+```
+## 🛠️ Built With
+* **Python 3** - Underlying programming runtime.
+* **Scikit-Learn** - Machine learning classification models & GridSearchCV tuning.
+* **Plotly Dash** - Dynamic data application framework environment.
+* **Folium** - Interactive HTML geospatial map visualization layers.
+* **Pandas / NumPy** - Matrix manipulations and structured data processing pipelines.
+* **BeautifulSoup4 / Requests** - Web scraping tools and REST API parsing pipelines.
+
+---
+## 🚀 Getting Started
+
+### Prerequisites
+Configure your local environment automatically by installing all the tracked project library dependencies directly via the configuration file:
+```bash
+pip install -r requirements.txt
+```
+### Execution Steps
+1. Clone this repository to your local system environment:
+   ```bash
+   git clone https://github.com
+   cd IBM_Data_Science_Capstone
+   ```
+2. Start the interactive workspace workspace environment:
+   ```bash
+   jupyter notebook
+   ```
+3. Run the development notebooks in sequence (`1_Data_Collection_API.ipynb` through `7_Machine_Learning_Prediction.ipynb`) to replicate the data insights pipeline.
+4. Launch the live dashboard visualization application locally:
+   ```bash
+   python 6_Interactive_Dashboard_Dash.py
+   ```
+
+---
+
 ## Key Insights & Results
 * **Best Performing Model**: All tuned classification models achieved a baseline accuracy score of **83.3%** on the test dataset, with **Support Vector Machine (SVM)** and **Decision Tree Classifier** showing optimal hyperparameter convergence via `GridSearchCV`.
 * **Payload Impact**: Higher payload masses generally correlate with a higher success rate for first-stage landings.
 * **Launch Site Success**: Operational success rates vary significantly by geographic location and proximity to coastlines.
 
-
-## Tools & Libraries Used
-* **Languages**: Python, SQL (SQLite)
-* **Libraries**: Pandas, NumPy, Scikit-Learn, BeautifulSoup4, Requests
-* **Visualization**: Matplotlib, Seaborn, Folium, Plotly Dash
 
