@@ -55,7 +55,7 @@ pip install -r requirements.txt
 ### Execution Steps
 1. Clone this repository to your local system environment:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/usmanali9999/Applied-Data-Science-Capstone.git
    cd Applied-Data-Science-Capstone
    ```
 2. Start the interactive workspace environment:
