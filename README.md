@@ -1,34 +1,39 @@
-# SpaceX Falcon 9 First Stage Landing Prediction
+# IBM Applied Data Science Capstone Project
 
-## Project Overview
-This repository contains my capstone project for the **IBM Data Science Professional Certificate**. The objective of this project is to predict whether the first stage of the SpaceX Falcon 9 rocket will land successfully. Since rocket launches cost upwards of $62 million and reusing the first stage saves a massive percentage of that cost, predicting landing success allows us to determine the cost of a launch.
+An end-to-end data science pipeline built to predict the landing success of SpaceX Falcon 9 rocket first-stage boosters, maximizing cost-efficiencies for commercial aerospace launches.
 
-## Project Pipeline & Architecture
-The project is divided sequentially into the following Jupyter Notebooks and applications:
+## 📌 Project Overview
+This repository contains the complete portfolio framework for the **IBM Applied Data Science Capstone** curriculum. The project spans data ingestion via web scraping and REST APIs, relational database management using SQL, interactive geospatial visualization, web-app dashboard deployment, and hyperparameter-tuned machine learning classification algorithms.
 
-1. **01_data_collection_api.ipynb**: Fetching historical launch records via the SpaceX REST API and structuring the raw JSON responses.
-2. **02_webscraping.ipynb**: Using BeautifulSoup to scrape Falcon 9 launch records from Wikipedia to supplement the dataset.
-3. **03_Data wrangling.ipynb**: Data cleaning, handling missing values, creating binary landing labels, and preparing features.
-4. **04-eda-with-sql.ipynb**: Uploading data to an SQLite database and running SQL queries to uncover insights into launch sites and payload metrics.
-5. **05_edadataviz.ipynb**: Comprehensive Exploratory Data Analysis using Seaborn and Matplotlib to visualize data correlations.
-6. **06_launch_site_location.ipynb**: Geolocation analysis mapping launch pad locations and safety distance buffers using Folium.
-7. **07-dashapp.py**: A fully interactive web dashboard built with Plotly Dash allowing real-time filtering of payloads and launch success rates.
-8. **08_Machine_Learning_Prediction.ipynb**: Building and tuning predictive classification models (Logistic Regression, SVM, Decision Trees, and K-Nearest Neighbors) using GridSearchCV.
+### 🚀 Core Data Pipeline Phases
+1. **Data Collection & Extraction**: Gathering launch logs using the SpaceX REST API and scraping historical Wikipedia tables using `BeautifulSoup4`.
+2. **Data Wrangling & Processing**: Handling null parameters, feature engineering categorical metrics using One-Hot Encoding, and flattening raw payloads.
+3. **Exploratory Data Analysis (EDA)**: Executive data analysis utilizing SQL queries and relational visualization plots.
+4. **Geospatial Mapping**: Isolating launch pad coordinates, safety distances, and landing failure/success metrics using interactive map overlays.
+5. **Interactive Dashboard App**: Deploying a live analytics control panel featuring structural charts and reactive filter selectors.
+6. **Predictive Modeling (ML)**: Training, tuning, and bench-testing four separate categorization algorithms to declare the optimal landing predictor model.
+
+---
 
 ## 📂 Repository Structure
 ```text
-├── 1_Data_Collection_API.ipynb       # Fetching raw SpaceX API data array streams
-├── 2_Data_Web_Scraping.ipynb         # Web scraping launch records via BeautifulSoup
-├── 3_EDA_SQL.ipynb                    # Analyzing dataset patterns using SQL queries
-├── 4_EDA_Visualization.ipynb          # Exploratory visualizations (Seaborn/Matplotlib)
-├── 5_Geospatial_Maps_Folium.ipynb     # Interactive map layout mapping coordinates
-├── 6_Interactive_Dashboard_Dash.py   # Code application for the live Plotly Dash app
-├── 7_Machine_Learning_Prediction.ipynb# ML classification training & model evaluation
-├── .gitignore                         # Tracking files ignored by Git version control
-├── LICENSE                            # Open-source distribution parameters
-├── README.md                          # Comprehensive documentation handbook
-└── requirements.txt                   # Complete project software package dependencies
+├── .gitignore                               # System files to ignore in Git
+├── 01_data-collection-api.ipynb             # Fetching raw SpaceX API data array streams
+├── 02_webscraping.ipynb                     # Web scraping launch records via BeautifulSoup
+├── 03_Data wrangling.ipynb                  # Data cleaning and feature engineering phase
+├── 04-eda-with-sql.ipynb                    # Analyzing dataset patterns using SQL queries
+├── 05_edadataviz.ipynb                      # Exploratory data visualizations with Seaborn
+├── 06_launch_site_location.ipynb            # Geospatial mapping coordinates using Folium
+├── 07-dashapp.py                            # Interactive web-app layout dashboard script
+├── 08_Machine_Learning_Prediction.ipynb     # ML model training and hyperparameter tuning
+├── 09_DataScience_Capstone_Presentation.pdf # Executive summary slide presentation
+├── LICENSE                                  # Open-source distribution parameters
+├── README.md                                # Comprehensive documentation handbook
+└── requirements.txt                         # Complete project software package dependencies
 ```
+
+---
+
 ## 🛠️ Built With
 * **Python 3** - Underlying programming runtime.
 * **Scikit-Learn** - Machine learning classification models & GridSearchCV tuning.
@@ -38,6 +43,7 @@ The project is divided sequentially into the following Jupyter Notebooks and app
 * **BeautifulSoup4 / Requests** - Web scraping tools and REST API parsing pipelines.
 
 ---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -45,27 +51,24 @@ Configure your local environment automatically by installing all the tracked pro
 ```bash
 pip install -r requirements.txt
 ```
+
 ### Execution Steps
 1. Clone this repository to your local system environment:
    ```bash
    git clone https://github.com
-   cd IBM_Data_Science_Capstone
+   cd Applied-Data-Science-Capstone
    ```
-2. Start the interactive workspace workspace environment:
+2. Start the interactive workspace environment:
    ```bash
    jupyter notebook
    ```
-3. Run the development notebooks in sequence (`1_Data_Collection_API.ipynb` through `7_Machine_Learning_Prediction.ipynb`) to replicate the data insights pipeline.
+3. Run the development notebooks in sequence (`01_data-collection-api.ipynb` through `08_Machine_Learning_Prediction.ipynb`) to replicate the data insights pipeline.
 4. Launch the live dashboard visualization application locally:
    ```bash
-   python 6_Interactive_Dashboard_Dash.py
+   python 07-dashapp.py
    ```
 
 ---
 
-## Key Insights & Results
-* **Best Performing Model**: All tuned classification models achieved a baseline accuracy score of **83.3%** on the test dataset, with **Support Vector Machine (SVM)** and **Decision Tree Classifier** showing optimal hyperparameter convergence via `GridSearchCV`.
-* **Payload Impact**: Higher payload masses generally correlate with a higher success rate for first-stage landings.
-* **Launch Site Success**: Operational success rates vary significantly by geographic location and proximity to coastlines.
-
-
+## 📄 License
+Distributed under the MIT License. See `LICENSE` for more details.
