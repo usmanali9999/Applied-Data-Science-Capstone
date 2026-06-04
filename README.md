@@ -107,6 +107,29 @@ The performance of each hyperparameter-tuned machine learning algorithm was asse
 | **Decision Tree Classifier** | 84.6% | `criterion: gini`, `max_depth: 4`, `splitter: best` |
 | **K-Nearest Neighbors (KNN)** | 84.6% | `n_neighbors: 10`, `algorithm: auto`, `p: 2` |
 
+## 📊 Machine Learning Model Performance Summary
+
+The table below details the optimal tuning parameters and prediction accuracies across all classification models tested in this lab. Each model was optimized using `GridSearchCV` and evaluated on identical train and test splits.
+
+
+| Classification Model | Best Hyperparameters Found | Training Accuracy | Test Dataset Accuracy |
+| :--- | :--- | :--- | :--- |
+| **Decision Tree** | `{'criterion': 'gini', 'max_depth': 8, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 5, 'splitter': 'random'}` | **87.50%** | **88.89%** |
+| **K-Nearest Neighbors (KNN)** | `{'algorithm': 'auto', 'n_neighbors': 10, 'p': 1}` | 84.82% | 83.33% |
+| **Support Vector Machine (SVM)** | `{'C': 1.0, 'gamma': 0.0316, 'kernel': 'sigmoid'}` | 84.82% | 83.33% |
+| **Logistic Regression** | `{'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs'}` | 84.64% | 83.33% |
+
+### 🎯 Final Model Selection & Evaluation
+
+To determine the absolute best predictive framework, an evaluation loop compared each optimized estimator against the unseen testing split. 
+
+* **The best performing model is:** `DecisionTreeClassifier`
+* **Highest Test Accuracy Score:** **88.89%**
+
+#### 🔬 Strategic Breakdown
+While **Logistic Regression**, **SVM**, and **KNN** all converged on a strong baseline performance of **83.33%**, the **Decision Tree** framework adjusted best to the underlying classification boundaries of the standardized SpaceX payload and orbit characteristics. This suggests that the tree-structured partitions were more effective at isolating the specific combination of features that guarantee a successful Falcon 9 first-stage landing.
+
+
 *Note: All optimized classification architectures yielded a tied baseline performance matrix accuracy across validation sets, heavily driven by the initial engineered feature profiles.*
 
 ---
