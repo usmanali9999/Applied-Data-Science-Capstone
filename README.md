@@ -96,16 +96,6 @@ pip install -r requirements.txt
    ```
 
 ---
-## 📊 Predictive Machine Learning Results
-The performance of each hyperparameter-tuned machine learning algorithm was assessed using classification accuracy scores:
-
-
-| Classification Model | Accuracy Score (Training Data) | Best Parameters Discovered |
-|---|---|---|
-| **Logistic Regression** | 84.6% | `C: 0.01`, `penalty: l2`, `solver: lbfgs` |
-| **Support Vector Machine (SVM)** | 84.6% | `C: 1.0`, `kernel: rbf`, `gamma: scale` |
-| **Decision Tree Classifier** | 84.6% | `criterion: gini`, `max_depth: 4`, `splitter: best` |
-| **K-Nearest Neighbors (KNN)** | 84.6% | `n_neighbors: 10`, `algorithm: auto`, `p: 2` |
 
 ## 📊 Machine Learning Model Performance Summary
 
@@ -126,7 +116,7 @@ To determine the absolute best predictive framework, an evaluation loop compared
 * **The best performing model is:** `DecisionTreeClassifier`
 * **Highest Test Accuracy Score:** **88.89%**
 
-#### 🔬 Strategic Breakdown
+####  Strategic Breakdown
 While **Logistic Regression**, **SVM**, and **KNN** all converged on a strong baseline performance of **83.33%**, the **Decision Tree** framework adjusted best to the underlying classification boundaries of the standardized SpaceX payload and orbit characteristics. This suggests that the tree-structured partitions were more effective at isolating the specific combination of features that guarantee a successful Falcon 9 first-stage landing.
 
 
