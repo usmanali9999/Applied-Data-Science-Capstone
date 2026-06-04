@@ -11,7 +11,18 @@ This repository contains the complete portfolio framework for the **IBM Applied 
 3. **Exploratory Data Analysis (EDA)**: Executive data analysis utilizing SQL queries and relational visualization plots.
 4. **Geospatial Mapping**: Isolating launch pad coordinates, safety distances, and landing failure/success metrics using interactive map overlays.
 5. **Interactive Dashboard App**: Deploying a live analytics control panel featuring structural charts and reactive filter selectors.
-6. **Predictive Modeling (ML)**: Training, tuning, and bench-testing four separate categorization algorithms to declare the optimal landing predictor model.
+   <table border="0">
+ <tr>
+    <th align="center">Launch Site Success Proportions</th>
+    <th align="center">Payload Mass vs. Success Correlation</th>
+ </tr>
+ <tr>
+    <td><img src="pie_chart.png" width="450"></td>
+    <td><img src="scatter_plot.png" width="550"></td>
+ </tr>
+</table>
+
+7. **Predictive Modeling (ML)**: Training, tuning, and bench-testing four separate categorization algorithms to declare the optimal landing predictor model.
 
 ---
 
