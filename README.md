@@ -14,22 +14,20 @@ This repository contains the complete portfolio framework for the **IBM Applied 
    
 <br>
 
-<table border="0" width="100%">
- <tr>
-    <th align="center" width="50%">Launch Site Success Proportions</th>
-    <th align="center" width="50%">Payload Mass vs. Success Correlation</th>
- </tr>
- <tr>
-    <td align="center" style="background-color: #ffffff; padding: 0; margin: 0;">
-        <img src="pie_chart.png" style="width: 100%; max-width: 480px; height: 260px; object-fit: cover; display: block;">
-    </td>
-    <td align="center" style="background-color: #ffffff; padding: 0; margin: 0;">
-        <img src="scatter_plot.png" style="width: 100%; max-width: 480px; height: 260px; object-fit: cover; display: block;">
-    </td>
- </tr>
-</table>
+<div align="center">
+  <div style="display: inline-block; vertical-align: middle; margin-right: 20px;">
+    <p><b>Launch Site Success Proportions</b></p>
+    <img src="pie_chart.png" width="440">
+  </div>
+  <div style="display: inline-block; vertical-align: middle;">
+    <p><b>Payload Mass vs. Success Correlation</b></p>
+    <img src="scatter_plot.png" width="490">
+  </div>
+</div>
 
 <br>
+
+ 
 
 
 
