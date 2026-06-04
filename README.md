@@ -12,7 +12,9 @@ This repository contains the complete portfolio framework for the **IBM Applied 
 4. **Geospatial Mapping**: Isolating launch pad coordinates, safety distances, and landing failure/success metrics using interactive map overlays.
 5. **Interactive Dashboard App**: Deploying a live analytics control panel featuring structural charts and reactive filter selectors.
    
-   <table border="0">
+<br>
+
+<table border="0">
  <tr>
     <th align="center">Launch Site Success Proportions</th>
     <th align="center">Payload Mass vs. Success Correlation</th>
@@ -22,6 +24,9 @@ This repository contains the complete portfolio framework for the **IBM Applied 
     <td><img src="scatter_plot.png" width="550"></td>
  </tr>
 </table>
+
+<br>
+
 
 
 7. **Predictive Modeling (ML)**: Training, tuning, and bench-testing four separate categorization algorithms to declare the optimal landing predictor model.
