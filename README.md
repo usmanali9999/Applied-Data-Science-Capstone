@@ -21,10 +21,10 @@ This repository contains the complete portfolio framework for the **IBM Applied 
  </tr>
  <tr>
     <td align="center" valign="middle">
-        <img src="pie_chart.png" width="510" style="display: block; margin: 0 auto; padding: 0;">
+        <img src="data/pie_chart.png" width="510" style="display: block; margin: 0 auto; padding: 0;">
     </td>
     <td align="center" valign="middle">
-        <img src="scatter_plot.png" width="480" style="display: block; margin: 0 auto; padding: 0;">
+        <img src="data/scatter_plot.png" width="480" style="display: block; margin: 0 auto; padding: 0;">
     </td>
  </tr>
 </table>
