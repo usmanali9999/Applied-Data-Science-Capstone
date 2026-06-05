@@ -44,19 +44,21 @@ This repository contains the complete portfolio framework for the **IBM Applied 
 
 ## 📂 Repository Structure
 ```text
-├── .gitignore                               # System files to ignore in Git
-├── 01_data-collection-api.ipynb             # Fetching raw SpaceX API data array streams
-├── 02_webscraping.ipynb                     # Web scraping launch records via BeautifulSoup
-├── 03_Data wrangling.ipynb                  # Data cleaning and feature engineering phase
-├── 04-eda-with-sql.ipynb                    # Analyzing dataset patterns using SQL queries
-├── 05_edadataviz.ipynb                      # Exploratory data visualizations with Seaborn
-├── 06_launch_site_location.ipynb            # Geospatial mapping coordinates using Folium
-├── 07-dashapp.py                            # Interactive web-app layout dashboard script
-├── 08_Machine_Learning_Prediction.ipynb     # ML model training and hyperparameter tuning
-├── 09_DataScience_Capstone_Presentation.pdf # Executive summary slide presentation
-├── LICENSE                                  # Open-source distribution parameters
-├── README.md                                # Comprehensive documentation handbook
-└── requirements.txt                         # Complete project software package dependencies
+## 📁 Repository Structure
+The project is organized into modular notebooks and scripts tracking each phase of the data science lifecycle:
+
+* **`data/`**: Dedicated directory containing your analytical visual assets (scatter plots and pie charts).
+* **`01_Data-Collection-API.ipynb`**: Data gathering using SpaceX API requests.
+* **`02_Webscraping.ipynb`**: Web scraping historical launch data using BeautifulSoup.
+* **`03_Data_Wrangling.ipynb`**: Data cleaning, handling null values, and initial feature engineering.
+* **`04-EDA-With-SQL.ipynb`**: Exploratory Data Analysis using SQL queries to discover operational trends.
+* **`05_EDA_Data_Visualization.ipynb`**: Exploratory Data Analysis using Python visual analytics (Matplotlib and Seaborn).
+* **`06_Launch_Site_Location.ipynb`**: Interactive geospatial mapping using Folium.
+* **`07_Dashapp.py`**: A fully functional, interactive Plotly Dash web dashboard application.
+* **`08_Machine_Learning_Predictions.ipynb`**: Machine learning classification model training, hyperparameter tuning, and evaluation.
+* **`requirements.txt`**: List of required Python packages and environment dependencies.
+* **`LICENSE`**: MIT License.
+
 ```
 
 ---
