@@ -1,130 +1,31 @@
-# IBM Applied Data Science Capstone Project
+# 🚀 SpaceX Falcon 9 Landing Success Prediction
 
-An end-to-end data science pipeline built to predict the landing success of SpaceX Falcon 9 rocket first-stage boosters, maximizing cost-efficiencies for commercial aerospace launches.
+### IBM Applied Data Science Capstone | End-to-End Data Science & Machine Learning Project
 
-## 📌 Project Overview
-This repository contains the complete portfolio framework for the **IBM Applied Data Science Capstone** curriculum. The project spans data ingestion via web scraping and REST APIs, relational database management using SQL, interactive geospatial visualization, web-app dashboard deployment, and hyperparameter-tuned machine learning classification algorithms.
+> **Business Question:** Can historical launch characteristics predict whether a Falcon 9 first-stage booster will land successfully—and help assess the economics of reusable rocket launches?
 
-### 🚀 Core Data Pipeline Phases
-1. **Data Collection & Extraction**: Gathering launch logs using the SpaceX REST API and scraping historical Wikipedia tables using `BeautifulSoup4`.
-2. **Data Wrangling & Processing**: Handling null parameters, feature engineering categorical metrics using One-Hot Encoding, and flattening raw payloads.
-3. **Exploratory Data Analysis (EDA)**: Executive data analysis utilizing SQL queries and relational visualization plots.
-4. **Geospatial Mapping**: Isolating launch pad coordinates, safety distances, and landing failure/success metrics using interactive map overlays.
-5. **Interactive Dashboard App**: Deploying a live analytics control panel featuring structural charts and reactive filter selectors.
-   
-<br>
+Built an end-to-end data science pipeline covering **REST API data collection, web scraping, data wrangling, SQL & Python EDA, geospatial analytics, interactive dashboard development, and machine learning classification**.
 
-<table border="0" width="100%">
- <tr>
-    <th align="center" width="50%">Launch Site Success Proportions</th>
-    <th align="center" width="50%">Payload Mass vs. Success Correlation</th>
- </tr>
- <tr>
-    <td align="center" valign="middle">
-        <img src="data/pie_chart.png" width="510" style="display: block; margin: 0 auto; padding: 0;">
-    </td>
-    <td align="center" valign="middle">
-        <img src="data/scatter_plot.png" width="480" style="display: block; margin: 0 auto; padding: 0;">
-    </td>
- </tr>
-</table>
+### 🏆 Project Result
 
-<br>
+**4 machine learning models compared → GridSearchCV hyperparameter tuning → Decision Tree selected → 88.89% test accuracy**
 
+| Project Area | Implementation |
+|---|---|
+| **Business Objective** | Predict Falcon 9 first-stage landing success |
+| **Data Collection** | SpaceX REST API + Wikipedia Web Scraping |
+| **Data Preparation** | JSON Normalization, Null Handling, Feature Engineering |
+| **Exploratory Analysis** | SQL + Python |
+| **Geospatial Analytics** | Folium Interactive Maps |
+| **Interactive Dashboard** | Plotly Dash |
+| **Machine Learning** | Logistic Regression, SVM, Decision Tree, KNN |
+| **Model Optimization** | GridSearchCV |
+| **Best Model** | **Decision Tree — 88.89% Test Accuracy** |
 
- 
+### 🛠️ Core Tech Stack
 
+`Python` · `SQL` · `Pandas` · `NumPy` · `Scikit-learn` · `GridSearchCV` · `BeautifulSoup` · `REST API` · `Plotly Dash` · `Folium` · `Jupyter Notebook`
 
-
-
-
-7. **Predictive Modeling (ML)**: Training, tuning, and bench-testing four separate categorization algorithms to declare the optimal landing predictor model.
+> **Project Context:** Completed as part of the **IBM Applied Data Science Capstone** within the IBM Data Science Professional Certificate. This is a scenario-based educational portfolio project and does not represent employment with IBM or SpaceX.
 
 ---
-
-## 📂 Repository Structure
-```text
-## 📁 Repository Structure
-The project is organized into modular notebooks and scripts tracking each phase of the data science lifecycle:
-
-* **`data/`**: Dedicated directory containing your analytical visual assets (scatter plots and pie charts).
-* **`01_Data-Collection-API.ipynb`**: Data gathering using SpaceX API requests.
-* **`02_Webscraping.ipynb`**: Web scraping historical launch data using BeautifulSoup.
-* **`03_Data_Wrangling.ipynb`**: Data cleaning, handling null values, and initial feature engineering.
-* **`04-EDA-With-SQL.ipynb`**: Exploratory Data Analysis using SQL queries to discover operational trends.
-* **`05_EDA_Data_Visualization.ipynb`**: Exploratory Data Analysis using Python visual analytics (Matplotlib and Seaborn).
-* **`06_Launch_Site_Location.ipynb`**: Interactive geospatial mapping using Folium.
-* **`07_Dashapp.py`**: A fully functional, interactive Plotly Dash web dashboard application.
-* **`08_Machine_Learning_Predictions.ipynb`**: Machine learning classification model training, hyperparameter tuning, and evaluation.
-* **`requirements.txt`**: List of required Python packages and environment dependencies.
-* **`LICENSE`**: MIT License.
-
-```
-
----
-
-## 🛠️ Built With
-* **Python 3** - Underlying programming runtime.
-* **Scikit-Learn** - Machine learning classification models & GridSearchCV tuning.
-* **Plotly Dash** - Dynamic data application framework environment.
-* **Folium** - Interactive HTML geospatial map visualization layers.
-* **Pandas / NumPy** - Matrix manipulations and structured data processing pipelines.
-* **BeautifulSoup4 / Requests** - Web scraping tools and REST API parsing pipelines.
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-Configure your local environment automatically by installing all the tracked project library dependencies directly via the configuration file:
-```bash
-pip install -r requirements.txt
-```
-
-### Execution Steps
-1. Clone this repository to your local system environment:
-   ```bash
-   git clone https://github.com/usmanali9999/Applied-Data-Science-Capstone.git
-   cd Applied-Data-Science-Capstone
-   ```
-2. Start the interactive workspace environment:
-   ```bash
-   jupyter notebook
-   ```
-3. Run the development notebooks in sequence (`01_data-collection-api.ipynb` through `08_Machine_Learning_Prediction.ipynb`) to replicate the data insights pipeline.
-4. Launch the live dashboard visualization application locally:
-   ```bash
-   python 07-dashapp.py
-   ```
-
----
-
-## 📊 Machine Learning Model Performance Summary
-
-The table below details the optimal tuning parameters and prediction accuracies across all classification models tested in this lab. Each model was optimized using `GridSearchCV` and evaluated on identical train and test splits.
-
-
-| Classification Model | Best Hyperparameters Found | Training Accuracy | Test Dataset Accuracy |
-| :--- | :--- | :--- | :--- |
-| **Decision Tree** | `{'criterion': 'gini', 'max_depth': 8, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 5, 'splitter': 'random'}` | **87.50%** | **88.89%** |
-| **K-Nearest Neighbors (KNN)** | `{'algorithm': 'auto', 'n_neighbors': 10, 'p': 1}` | 84.82% | 83.33% |
-| **Support Vector Machine (SVM)** | `{'C': 1.0, 'gamma': 0.0316, 'kernel': 'sigmoid'}` | 84.82% | 83.33% |
-| **Logistic Regression** | `{'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs'}` | 84.64% | 83.33% |
-
-### 🎯 Final Model Selection & Evaluation
-
-To determine the absolute best predictive framework, an evaluation loop compared each optimized estimator against the unseen testing split. 
-
-* **The best performing model is:** `DecisionTreeClassifier`
-* **Highest Test Accuracy Score:** **88.89%**
-
-####  Strategic Breakdown
-While **Logistic Regression**, **SVM**, and **KNN** all converged on a strong baseline performance of **83.33%**, the **Decision Tree** framework adjusted best to the underlying classification boundaries of the standardized SpaceX payload and orbit characteristics. This suggests that the tree-structured partitions were more effective at isolating the specific combination of features that guarantee a successful Falcon 9 first-stage landing.
-
-
-*Note: All optimized classification architectures yielded a tied baseline performance matrix accuracy across validation sets, heavily driven by the initial engineered feature profiles.*
-
----
-
-## 📄 License
-Distributed under the MIT License. See `LICENSE` for more details.
