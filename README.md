@@ -244,6 +244,7 @@ Best hyperparameters identified through `GridSearchCV`:
     "min_samples_split": 5,
     "splitter": "random"
 }
+```
 
 ## 🛠️ Technology Stack
 
