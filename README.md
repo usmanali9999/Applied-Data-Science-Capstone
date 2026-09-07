@@ -245,6 +245,21 @@ Best hyperparameters identified through `GridSearchCV`:
     "splitter": "random"
 }
 ```
+### Model Selection
+
+The tuned **Decision Tree Classifier** achieved the highest observed test accuracy among the four evaluated models.
+
+Logistic Regression, SVM, and KNN each achieved **83.33% test accuracy**, while the Decision Tree reached **88.89%** on the capstone test split.
+
+This comparison demonstrates a complete model-selection workflow:
+
+**Preprocessing → Train/Test Split → Model Training → Hyperparameter Tuning → Model Comparison → Evaluation → Final Model Selection**
+
+> **Note:** The 88.89% result represents performance on the test split used in this capstone experiment and should not be interpreted as production-level performance on future SpaceX launches.
+
+📓 [`08_Machine_Learning_Predictions.ipynb`](08_Machine_Learning_Predictions.ipynb)
+
+---
 
 ## 🛠️ Technology Stack
 
