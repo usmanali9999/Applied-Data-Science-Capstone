@@ -29,3 +29,32 @@ Built an end-to-end data science pipeline covering **REST API data collection, w
 > **Project Context:** Completed as part of the **IBM Applied Data Science Capstone** within the IBM Data Science Professional Certificate. This is a scenario-based educational portfolio project and does not represent employment with IBM or SpaceX.
 
 ---
+## 🎯 Business Problem
+
+Commercial rocket launches are extremely expensive. In the IBM capstone scenario, **SpaceX advertises Falcon 9 launches at approximately $62 million**, while launches from other providers can cost **upwards of $165 million**.
+
+A major contributor to SpaceX's cost advantage is its ability to **recover and reuse the Falcon 9 first-stage booster**.
+
+Therefore, understanding whether the first stage is likely to land successfully can provide valuable insight into launch economics and reusable-launch operations.
+
+### Project Objective
+
+The objective of this project is to build an end-to-end data science solution that answers:
+
+> **Can we predict whether the Falcon 9 first stage will land successfully using historical launch characteristics?**
+
+To solve this problem, the project combines:
+
+- SpaceX REST API data collection
+- Wikipedia web scraping
+- Data cleaning and wrangling
+- SQL exploratory analysis
+- Python data visualization
+- Geospatial launch-site analysis
+- Interactive Plotly Dash analytics
+- Machine learning classification
+- Hyperparameter tuning and model evaluation
+
+The final output is a predictive classification workflow capable of distinguishing between **successful (`1`) and unsuccessful (`0`) first-stage landing outcomes**.
+
+---
